@@ -1,0 +1,87 @@
+{
+  "externalReferenceCode": "GithubNotificationDataSet",
+  "status": {
+    "code": 0,
+    "label": "approved",
+    "label_i18n": "Approved"
+  },
+  "defaultItemsPerPage": 20,
+  "restSchema": "GithubNotification",
+  "restApplication": "/c/githubnotifications",
+  "tableSectionsOrder": "",
+  "label": "GithubNotificationDataSet",
+  "filtersOrder": "",
+  "itemActionsOrder": "",
+  "listOfItemsPerPage": "4, 8, 20, 40, 60",
+  "sortsOrder": "",
+  "restEndpoint": "/",
+  "creationActionsOrder": "",
+  "dataSetToDataSetListSections": [
+    {
+      "externalReferenceCode": "GithubNotificationDataSet-type",
+      "status": {
+        "code": 0,
+        "label": "approved",
+        "label_i18n": "Approved"
+      },
+      "fieldName": "type",
+      "name": "title"
+    },
+    {
+      "externalReferenceCode": "GithubNotificationDataSet-user",
+      "status": {
+        "code": 0,
+        "label": "approved",
+        "label_i18n": "Approved"
+      },
+      "fieldName": "user",
+      "name": "description"
+    },
+    {
+      "externalReferenceCode": "GithubNotificationDataSet-githubAvatarURL",
+      "status": {
+          "code": 0,
+          "label": "approved",
+          "label_i18n": "Approved"
+      },
+      "fieldName": "githubAvatarURL",
+      "name": "image"
+    }
+  ],
+  "dataSetToDataSetSorts": [
+    {
+      "externalReferenceCode": "GithubNotificationDataSet-sorting",
+      "status": {
+        "code": 0,
+        "label": "approved",
+        "label_i18n": "Approved"
+      },
+      "label_i18n": {
+        "en_US": "github-sorting"
+      },
+      "orderType": "desc",
+      "default": true,
+      "fieldName": "dateCreated",
+      "dataSetToDataSetSortsERC": "GithubNotificationDataSet",
+      "label": "github-sorting"
+    }
+  ],
+  "dataSetToDataSetActions": [
+    {
+      "dataSetToDataSetActionsERC": "GithubNotificationDataSet",
+      "externalReferenceCode": "5a2845a1-d46a-d527-b80d-c22711aa7be7",
+      "label": "Github profile",
+      "label_i18n": {
+        "en_US": "Github profile"
+      },
+      "status": {
+        "code": 0,
+        "label": "approved",
+        "label_i18n": "Approved"
+      },
+      "target": "link",
+      "type": "item",
+      "url": "{githubUserURL}"
+    }
+  ]
+}

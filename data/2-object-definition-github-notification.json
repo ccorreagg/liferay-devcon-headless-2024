@@ -1,0 +1,143 @@
+{
+    "externalReferenceCode": "GITHUB-NOTIFICATION",
+    "label": {
+        "en_US": "GithubNotification"
+    },
+    "name": "GithubNotification",
+    "objectFields": [
+        {
+            "DBType": "String",
+            "businessType": "Text",
+            "externalReferenceCode": "GITHUB-NOTIFICATION-TYPE",
+            "label": {
+                "en_US": "Type"
+            },
+            "name": "type",
+            "required": false,
+            "type": "String"
+        },
+        {
+            "DBType": "DateTime",
+            "businessType": "DateTime",
+            "externalReferenceCode": "GITHUB-NOTIFICATION-DATETIME",
+            "label": {
+                "en_US": "Datetime"
+            },
+            "name": "datetime",
+            "objectFieldSettings": [
+                {
+                    "name": "timeStorage",
+                    "value": "convertToUTC"
+                }
+            ],
+            "required": false,
+            "type": "DateTime"
+        },
+        {
+            "DBType": "String",
+            "businessType": "Text",
+            "externalReferenceCode": "GITHUB-NOTIFICATION-USER",
+            "label": {
+                "en_US": "User"
+            },
+            "name": "user",
+            "required": false,
+            "type": "String"
+        },
+        {
+            "DBType": "String",
+            "businessType": "Text",
+            "externalReferenceCode": "GITHUB-NOTIFICATION-AVATAR-URL",
+            "label": {
+                "en_US": "Github avatar URL"
+            },
+            "name": "githubAvatarURL",
+            "required": false,
+            "type": "String"
+        },
+        {
+            "DBType": "String",
+            "businessType": "Text",
+            "externalReferenceCode": "GITHUB-NOTIFICATION-USER-URL",
+            "label": {
+                "en_US": "Github user URL"
+            },
+            "name": "githubUserURL",
+            "required": false,
+            "type": "String"
+        }
+    ],
+    "objectViews": [
+        {
+            "defaultObjectView": true,
+            "name": {
+                "en_US": "viewgithub"
+            },
+            "objectDefinitionExternalReferenceCode": "GITHUB-NOTIFICATION",
+            "objectViewColumns": [
+                {
+                    "label": {
+                        "en_US": "ID"
+                    },
+                    "objectFieldName": "id",
+                    "priority": 0
+                },
+                {
+                    "label": {
+                        "en_US": "User"
+                    },
+                    "objectFieldName": "user",
+                    "priority": 1
+                },
+                {
+                    "label": {
+                        "en_US": "Type"
+                    },
+                    "objectFieldName": "type",
+                    "priority": 2
+                },
+                {
+                    "label": {
+                        "en_US": "Github Avatar URL"
+                    },
+                    "objectFieldName": "githubAvatarURL",
+                    "priority": 3
+                },
+                {
+                    "label": {
+                        "en_US": "Github User URL"
+                    },
+                    "objectFieldName": "githubUserURL",
+                    "priority": 4
+                },
+                {
+                    "label": {
+                        "en_US": "Datetime"
+                    },
+                    "objectFieldName": "datetime",
+                    "priority": 5
+                },
+                {
+                    "label": {
+                        "en_US": "Modified Date"
+                    },
+                    "objectFieldName": "modifiedDate",
+                    "priority": 6
+                }
+            ],
+            "objectViewFilterColumns": [],
+            "objectViewSortColumns": []
+        }
+    ],
+    "objectFolderExternalReferenceCode": "DEVCON2024-FOLDER",
+    "panelCategoryKey": "control_panel.notifications",
+    "pluralLabel": {
+        "en_US": "GithubNotifications"
+    },
+    "restContextPath": "/o/c/githubnotifications",
+    "scope": "company",
+    "status": {
+        "code": 0
+    },
+    "titleObjectFieldName": "id"
+}

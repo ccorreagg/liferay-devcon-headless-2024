@@ -1,0 +1,12 @@
+{
+    "externalReferenceCode": "APIBUILDER-GITHUB-PROPERTY-SENDER-SENDER-URL",
+    "name": "html_url",
+    "description": "'sender.html_url' field",
+    "objectFieldERC": "GITHUB-NOTIFICATION-USER-URL",
+    "r_apiPropertyToAPIProperties_l_apiPropertyERC": "APIBUILDER-GITHUB-PROPERTY-SENDER",
+    "r_apiSchemaToAPIProperties_l_apiSchemaERC": "{API_BUILDER_SCHEMA_ERC}",
+    "status": {
+        "code": 0
+    },
+    "type": "field"
+}

@@ -1,0 +1,91 @@
+{
+    "applicationStatus": "published",
+    "baseURL": "liferay-github",
+    "description": "Github API Builder DEVCON 2024 Application",
+    "externalReferenceCode": "APIBUILDER-GITHUB-APPLICATION",
+    "status": {
+        "code": 0
+    },
+    "title": "Liferay Github",
+    "version": "1.0",
+    "apiApplicationToAPISchemas": [
+        {
+            "description": "Github Notification",
+            "externalReferenceCode": "APIBUILDER-GITHUB-SCHEMA",
+            "mainObjectDefinitionERC": "GITHUB-NOTIFICATION",
+            "name": "GithubNotification",
+            "status": {
+                "code": 0
+            },
+            "apiSchemaToAPIProperties": [
+                {
+                    "description": "'action' field",
+                    "externalReferenceCode": "APIBUILDER-GITHUB-PROPERTY-ACTION",
+                    "name": "action",
+                    "objectFieldERC": "GITHUB-NOTIFICATION-TYPE",
+                    "status": {
+                        "code": 0
+                    },
+                    "type": "field"
+                },
+                {
+                    "description": "'starred_at' field",
+                    "externalReferenceCode": "APIBUILDER-GITHUB-PROPERTY-STARRED_AT",
+                    "name": "starred_at",
+                    "objectFieldERC": "GITHUB-NOTIFICATION-DATETIME",
+                    "status": {
+                        "code": 0
+                    },
+                    "type": "field"
+                },
+                {
+                    "description": "'sender' field",
+                    "externalReferenceCode": "APIBUILDER-GITHUB-PROPERTY-SENDER",
+                    "name": "sender",
+                    "status": {
+                        "code": 0
+                    },
+                    "type": "record"
+                },
+                {
+                    "description": "'sender.login' field",
+                    "externalReferenceCode": "APIBUILDER-GITHUB-PROPERTY-SENDER-LOGIN",
+                    "name": "login",
+                    "objectFieldERC": "GITHUB-NOTIFICATION-USER",
+                    "r_apiPropertyToAPIProperties_l_apiPropertyERC": "APIBUILDER-GITHUB-PROPERTY-SENDER",
+                    "status": {
+                        "code": 0
+                    },
+                    "type": "field"
+                },
+                {
+                    "description": "'sender.avatar_url' field",
+                    "externalReferenceCode": "APIBUILDER-GITHUB-PROPERTY-SENDER-AVATAR-URL",
+                    "name": "avatar_url",
+                    "objectFieldERC": "GITHUB-NOTIFICATION-AVATAR-URL",
+                    "r_apiPropertyToAPIProperties_l_apiPropertyERC": "APIBUILDER-GITHUB-PROPERTY-SENDER",
+                    "status": {
+                        "code": 0
+                    },
+                    "type": "field"
+                }
+            ]
+        }
+    ],
+    "apiApplicationToAPIEndpoints": [
+        {
+            "externalReferenceCode": "APIBUILDER-GITHUB-POST-ENDPOINT",
+            "description": "POST endpoint for the Github Webhook",
+            "httpMethod": "post",
+            "name": "notifications",
+            "path": "/notifications",
+            "retrieveType": "singleElement",
+            "r_requestAPISchemaToAPIEndpoints_l_apiSchemaERC": "APIBUILDER-GITHUB-SCHEMA",
+            "r_responseAPISchemaToAPIEndpoints_l_apiSchemaERC": "APIBUILDER-GITHUB-SCHEMA",
+            "scope": "company",
+            "status": {
+                "code": 0
+            }
+        }
+    ]
+}
