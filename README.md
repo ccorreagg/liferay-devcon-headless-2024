@@ -19,5 +19,4 @@ Here you can find the resources used:
 
 - [Script to test the integration](test.sh)
 
-_NOTE: To allow unauthenticated requests during the talk, the Guest role needs to be updated to grant access to the GithubNotification object. Additionally, a temporary Service Access Policy is created to enable guest access to the API Builder POST method. This is a temporary solution, as security features are currently under development and it is just used for testing purposes._
-_NOTE: It is necessary to set the development feature flag LPD-10964 and the beta feature flag LPS-17864_
+_NOTE: To allow unauthenticated requests during the talk, the Guest role needs to be updated to grant access to the GithubNotification object. Additionally, a temporary Service Access Policy is created to enable guest access to the API Builder POST method. This is a temporary solution, as security features are currently under development and it is just used for testing purposes. It is necessary to set the development feature flag LPD-10964 and the beta feature flag LPS-17864 for API Builder and LPD-34594 and LPS-164563 for the Data Set Manager_
